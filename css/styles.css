@@ -9,7 +9,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    
     padding: 20px;
 }
 
@@ -65,42 +65,30 @@ header img:hover {
     transform: scale(1.1); /* Scale the image to 110% on hover */
 }
 
-/* Add this to your existing styles.css or in a separate CSS file */
 
-/* Hover effect for navigation links */
-nav a:hover {
-    color: #ff6600; /* Change the text color on hover */
-    background-color: #333; /* Change the background color on hover */
-    border-radius: 5px; /* Add rounded corners on hover */
-    transition: color 0.3s, background-color 0.3s, border-radius 0.3s; /* Add smooth transition effect */
-}
-
-/* Add this to your existing styles.css or in a separate CSS file */
-
-
-/* Change cursor style for the entire website */
-body {
-    cursor: default; /* You can replace 'pointer' with the cursor style you prefer */
-    cursor: url('/images/cursor.png'), auto;
-}
-
-/* Add this CSS rule to your existing styles.css or in a separate CSS file */
 header {
     background-color: #5B0888; /* Change to the desired background color */
     color: #fff; /* Change text color to contrast with the background */
+    
+    padding: 20px;
+}
+
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+header {
+    background-color: blue; /* Change to your desired header background color */
+    color: #fff; /* Change text color to contrast with the background */
     text-align: center;
     padding: 20px;
 }
 
-
-/* Add this CSS rule to your existing styles.css or in a separate CSS file */
-header {
+.header-content {
     display: flex;
+    justify-content: center;
     align-items: center;
-     /* Change to your desired header background color */
-    color: #fff; /* Change text color to contrast with the background */
-    text-align: center;
-    padding: 20px;
+}
+.role {
+    color: #f6ff00;
+
 }
 
 header img {
@@ -109,21 +97,60 @@ header img {
     border-radius: 50%; /* Makes the image round */
     border: 3px solid #333; /* Add a border around the image */
     transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-    margin-right: 20px; /* Add margin to move the image to the left */
+    margin-right: 20px; /* Add margin to separate the image from text */
+}
+
+.name-title {
+    text-align: left; /* Align text to the left */
+}
+
+
+/* navigation new css */
+
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+nav a {
+    color: #333; /* Set the default text color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the text inline-block to allow vertical alignment */
+    position: relative; /* Add relative positioning */
+    transition: transform 0.3s; /* Add smooth transition for transform */
+}
+
+nav a::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f6ff00; /* Set the color you want when hovered */
+    transform: scaleX(0); /* Initially, scale to 0 width */
+    transform-origin: right; /* Start scaling from the right */
+    transition: transform 0.3s; /* Add a smooth transition for transform */
+}
+
+nav a:hover {
+    color: #f6ff00; /* Change text color on hover */
+    transform: translateY(-5px); /* Move text up slightly on hover */
+}
+
+nav a:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+    transform-origin: left; /* Expand from the left */
 }
 
 /* Add this CSS rule to your existing styles.css or in a separate CSS file */
 
 
-
-.header-content {
-    text-align: center;
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.top-nav a {
+    /* Apply the Poppins font to the navigation links */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
 }
 
-.header-content h1 {
-    margin: 0;
-}
-
-.header-content p {
-    margin: 0;
-}
