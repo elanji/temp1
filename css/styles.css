@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #9D76C1;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 40px;
+}
+
+section h2 {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add this to your existing styles.css or in a separate CSS file */
+
+/* Style for the profile photo */
+header img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    border: 3px solid #333; /* Add a border around the image */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the profile photo */
+header img:hover {
+    transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+/* Add this to your existing styles.css or in a separate CSS file */
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #ff6600; /* Change the text color on hover */
+    background-color: #333; /* Change the background color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s; /* Add smooth transition effect */
+}
+
+/* Add this to your existing styles.css or in a separate CSS file */
+
+
+/* Change cursor style for the entire website */
+body {
+    cursor: default; /* You can replace 'pointer' with the cursor style you prefer */
+    cursor: url('/images/cursor.png'), auto;
+}
+
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+header {
+    background-color: #5B0888; /* Change to the desired background color */
+    color: #fff; /* Change text color to contrast with the background */
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+header {
+    display: flex;
+    align-items: center;
+     /* Change to your desired header background color */
+    color: #fff; /* Change text color to contrast with the background */
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    border: 3px solid #333; /* Add a border around the image */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    margin-right: 20px; /* Add margin to move the image to the left */
+}
+
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+
+
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.header-content p {
+    margin: 0;
+}
