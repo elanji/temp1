@@ -17,7 +17,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #9D76C1;
+    background-color: #FAA916;
     padding: 10px;
 }
 
@@ -67,7 +67,7 @@ header img:hover {
 
 
 header {
-    background-color: #5B0888; /* Change to the desired background color */
+    background-color: #7F5A83; /* Change to the desired background color */
     color: #fff; /* Change text color to contrast with the background */
     
     padding: 20px;
@@ -75,7 +75,7 @@ header {
 
 /* Add this CSS rule to your existing styles.css or in a separate CSS file */
 header {
-    background-color: blue; /* Change to your desired header background color */
+   
     color: #fff; /* Change text color to contrast with the background */
     text-align: center;
     padding: 20px;
@@ -129,7 +129,7 @@ nav a::before {
 }
 
 nav a:hover {
-    color: #f6ff00; /* Change text color on hover */
+    color: #7429ff; /* Change text color on hover */
     transform: translateY(-5px); /* Move text up slightly on hover */
 }
 
@@ -152,5 +152,13 @@ nav a:hover::before {
 .top-nav a {
     /* Apply the Poppins font to the navigation links */
     font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    
 }
 
+/* Add this CSS rule to your existing styles.css or in a separate CSS file */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d5dd; /* Change the background color to #d2d5dd */
+    margin: 0;
+    padding: 0;
+}
